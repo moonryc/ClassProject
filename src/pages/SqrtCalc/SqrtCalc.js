@@ -10,9 +10,9 @@ export default class SqrtCalc extends Component {
         this.state = {
             text: "Fucker",
             x: 1,
-            input1: 0,
-            input2: 0,
-            input3: 0,
+            input1: 1,
+            input2: 1,
+            input3: 1,
             outputOne: 0,
             outputTwo: 0,
             test: 0
@@ -83,7 +83,7 @@ export default class SqrtCalc extends Component {
                 <TextField id="filled-basic" label="Filled" variant="filled" value={this.state.input2} onChange={this.handelInputTwoChange} /> <br /><br />
                 <TextField id="filled-basic" label="Filled" variant="filled" value={this.state.input3} onChange={this.handelInputThreeChange} /> <br /><br />
                 <button onClick={this.sqrtCalc}>Click here to Calculate your Polynomial Roots!</button>
-                <h3> Your equation is <i>f(x)</i> = {this.state.input1 ? this.state.input1 : ""} X<sup>2</sup> + {this.state.input2 ? this.state.input2 : ""} X {this.state.input3 ? " + " + this.state.input3 : " + 0"}</h3>
+                <h2> Your equation is: <i>f(x)</i> = {this.state.input1 ? this.state.input1 : ""} X<sup>2</sup> + {this.state.input2 ? this.state.input2 : ""} X {this.state.input3 ? " + " + this.state.input3 : " + 0"}</h2>
                 <h1>Polynomial Root X<sub>1</sub> = {this.state.outputOne}</h1>
                 <h1>Polynomial Root X<sub>2</sub> = {this.state.outputTwo}</h1> <br />
             </div >
