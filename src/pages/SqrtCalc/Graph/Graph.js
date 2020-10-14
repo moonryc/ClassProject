@@ -3,6 +3,14 @@ import { AppBar, Button, IconButton, TextField, Toolbar, Typography, withStyles 
 import { Menu } from "@material-ui/icons";
 
 export default class Graph extends Component {
+    constructor(props){
+        this.state= {
+
+        }
+    }
+
+
+    
     render() {
         return (
             <div>

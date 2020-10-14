@@ -10,6 +10,7 @@ import SqrtCalc from './pages/SqrtCalc';
 import PopUps from './pages/PopUps';
 import Game from "./pages/Game";
 import Graph from './pages/SqrtCalc/Graph/Graph';
+import ClassesTest from './pages/ClassesTest/ClassesTest';
 
 let theme = createMuiTheme({
   palette: {
@@ -44,6 +45,9 @@ function App() {
             </Route>
             <Route path="/sqrtcalc">
               <SqrtCalc />
+            </Route>
+            <Route path="/classestest">
+              <ClassesTest />
             </Route>
             <Route path="/graph">
               <Graph />
